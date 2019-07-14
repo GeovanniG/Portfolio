@@ -19,7 +19,7 @@ const Project1 = () => (
             items={[
                 `React`,
                 `Redux as React Hooks`,
-                `bootstrap`,
+                `Bootstrap`,
                 'APIs'
             ]}
         />

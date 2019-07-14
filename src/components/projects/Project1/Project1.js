@@ -5,14 +5,14 @@ import image from './project-1.png';
 
 const Project1 = () => (
     <Project
-        liveProject="https://geovannig.github.io/date-space/"
-        sourceCode="https://github.com/GeovanniG/date-space" 
+        liveProject="https://gonzalez-portfolio.herokuapp.com/portfolio"
+        sourceCode="https://github.com/GeovanniG/Portfolio" 
         image={image} 
         title="Project Geo" 
         items={[
             `This is verison 1.0.0 of my website. As my tastes change so will the layout. Currently the site is 
                 painted in black, white, and green. In the future this may change.`,
-            `Simplicity was chosen over complexity because simplicity has more room for growth.`
+            `Simplicity was chosen over complexity because simplicity leaves more room for growth.`,
         ]}    
     >
         <ProjectList 
@@ -20,7 +20,9 @@ const Project1 = () => (
             items={[
                 `HTML`,
                 `Sass`,
-                `React`
+                `React`,
+                `Node`,
+                `Express`
             ]} 
         />
 
@@ -28,16 +30,19 @@ const Project1 = () => (
             title="Lessons Learned" 
             items={[
                 `UI/UX design is harder than expected`,
-                `Use components to make site scalable`
+                `Use components to make site scalable`,
+                `Redux is not always necessary`,
+                `React-routers make building SPA a breeze`
             ]} 
         />
 
         <ProjectList 
             title="To do" 
             items={[
-                `Add links to this page`,
-                `Add links to social icons`,
-                `Set up form on contact page`
+                `Improve UI/UX`,
+                `Consider using a different set of colors`,
+                `Add accessibility features`,
+                `Look into SEO`
             ]} 
         />
     </Project>
