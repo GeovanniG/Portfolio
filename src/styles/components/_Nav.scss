@@ -1,0 +1,24 @@
+.nav {
+    background: $black-primary;
+    box-shadow: 0 4px 3px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-evenly;
+    // margin-bottom: $xs-size;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    color: $white-primary;
+    text-decoration: none;
+    padding: $s-size 0;
+}
+
+.nav-link:hover {
+    color: $green-primary;
+}
+
+.nav-link--active {
+    color: $green-primary;
+    border-bottom: 2px solid $green-primary;
+}

@@ -1,0 +1,11 @@
+.home-footer {
+    background: $black-primary;
+}
+
+@media (min-width: $s-breakpoint) {
+    .home-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

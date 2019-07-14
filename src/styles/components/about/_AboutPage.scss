@@ -1,0 +1,31 @@
+.about-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: $m-size;
+}
+
+.about-page p {
+    margin: $xs-size;
+    text-indent: $m-size;
+}
+
+@media (min-width: $xs-breakpoint) {
+    .about-page {
+        margin: $m-size auto;
+        width: 70%;
+    }
+}
+
+@media (min-width: $l-breakpoint) {
+    .about-page {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .about-page {
+        width: 40%;
+    }
+}

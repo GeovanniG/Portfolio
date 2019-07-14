@@ -1,0 +1,25 @@
+.footer {
+    background: $black-primary;
+    // bottom: 0;
+    color: $white-primary;
+    display: flex;
+    justify-content: flex-end;
+    padding: $xs-size;
+    // position: absolute;
+    // right: 0;
+    // max-width: $xl-breakpoint;
+}
+
+// .footer-container {
+//     // margin: auto;
+//     // max-width: $xl-breakpoint;
+//     // width: ;
+// }
+
+// @media (min-height: 90vh) {
+//     .footer {
+//         bottom: 0;
+//         position: absolute;
+//         width: 100%;
+//     }
+// }

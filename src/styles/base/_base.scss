@@ -1,0 +1,51 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: $m-size;
+    letter-spacing: 0.0625rem;
+    line-height: 1.5;
+    margin: auto;
+    max-width: $xl-breakpoint;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input[type=submit], .social__icon {
+    background: $black-primary;
+    border: 1px solid $white-primary;
+    border-radius: $xl-size;
+    color: $white-primary;
+    cursor: pointer;
+    padding: 0.6rem $xs-size;
+    outline: none;
+    transition: scale .2s ease-in-out;
+}
+
+button:hover, .social__icon:hover {
+    border-color: $green-primary;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: $green-primary;
+    transform: scale(1.02);
+}
+
+textarea {
+    resize: vertical;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+}

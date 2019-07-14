@@ -1,0 +1,33 @@
+.project__list {
+    margin: $s-size auto;
+}
+
+.project__list-ul {
+    padding-left: $s-size;
+}
+
+.project__list-item-hide {
+    display: none;
+    transition: all 1s linear;
+}
+
+.hide-items__btn-box {
+    margin: $s-size 0;
+    text-align: center;
+}
+
+.hide-items__ellipse {
+    letter-spacing: $xs-size;
+    font-weight: 700;
+}
+
+// .hide-items__btn, .hide-items__btn:focus {
+//     background: $black-primary;
+//     border: 1px solid $white-primary;
+//     color: $white-primary;
+// }
+
+// .hide-items__btn:hover {
+//     border-color: $green-primary;
+//     color: $green-primary;
+// }

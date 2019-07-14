@@ -1,0 +1,70 @@
+.project {
+    border-bottom: 1px solid $black-primary;
+    margin: $l-size $m-size $xl-size $m-size;
+}
+
+.project__img-box {
+    width: 100%;
+    text-align: center;
+}
+
+.project__img {
+    border: $black-primary 1px solid;
+    border-radius: $s-size;
+}
+
+.project__text-title {
+    text-align: center;
+}
+
+.project__text {
+    margin: $xs-size 0;
+    text-indent: $m-size;
+}
+
+.project__text-button-box {
+    text-align: center;
+    margin: $m-size 0;
+}
+
+.project__text-button {
+    margin: 0 $s-size;
+}
+
+.project__text-link:visited {
+    color: $white-primary;
+}
+
+.project__text-link:hover {
+    color: $green-primary;
+}
+
+@media (min-width: $xs-breakpoint) {
+    .project {
+        margin: $m-size auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: $s-breakpoint) {
+    .project {
+        width: 70%;
+    }
+}
+
+@media (min-width: $m-breakpoint) {
+    .project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(25rem, auto);
+        grid-column-gap: $l-size;
+        padding: $m-size $l-size;
+        width: 100%;
+    }
+}
+
+@media (min-width: $l-breakpoint) {
+    .project {
+        width: 80%;
+    }
+}

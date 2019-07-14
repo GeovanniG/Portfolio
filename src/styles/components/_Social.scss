@@ -1,0 +1,20 @@
+.social__icons {
+    display: flex;
+    font-size: $xl-size;
+    position: absolute;
+    right: 0;
+    top: $xl-size;
+}
+
+.social__icon {
+    border-radius: $s-size;
+    padding: $s-size;
+    margin: $xs-size;
+}
+
+@media (min-width: $l-breakpoint) {
+    .social__icons {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}

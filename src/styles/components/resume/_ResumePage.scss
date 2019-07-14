@@ -1,0 +1,12 @@
+.resume-file {
+    border: 3px solid $black-primary;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+}
+
+@media (min-width: $m-breakpoint) {
+    .resume-file {
+        width: 90%;
+    }
+}
