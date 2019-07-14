@@ -36,7 +36,7 @@ const Form = () => {
         })
 
         if (response.status === 200) {
-            setError('Succesfully sent')
+            setError('Sent successfully')
             success = true;
         } else {
             setError('Unable to send message');
