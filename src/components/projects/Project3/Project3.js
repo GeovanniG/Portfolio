@@ -10,7 +10,7 @@ const Project1 = () => (
         image={image} 
         title="Astronomy Explained with Pictures" 
         items={[
-            `If you need to relax and enjoy look at beauty provide by nature have a look at this app.`,
+            `If you need to relax, take a break and look at the beauty provided by nature.`,
             `When a vaild date is entered, a space picture with a description will be returned. Simple yet relaxing.`
         ]}    
     >

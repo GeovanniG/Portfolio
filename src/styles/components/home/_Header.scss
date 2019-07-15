@@ -31,24 +31,24 @@
     text-align: center;
 }
 
+.home-header__text--fade-in-1s {
+    @include fade(1s)
+}
+
 .home-header__text--fade-in-2s {
     @include fade(2s)
+}
+
+.home-header__text--fade-in-3s {
+    @include fade(3s)
 }
 
 .home-header__text--fade-in-4s {
     @include fade(4s)
 }
 
-.home-header__text--fade-in-6s {
-    @include fade(6s)
-}
-
-.home-header__text--fade-in-8s {
-    @include fade(8s)
-}
-
-.home-header__text--fade-in-10s {
-    @include fade(10s)
+.home-header__text--fade-in-5s {
+    @include fade(5s)
 }
 
 @keyframes fade-in {

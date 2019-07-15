@@ -21,7 +21,7 @@ app.post('/api/email', async (req, res) => {
     res.json({ response });
 })
 
-const sendEmail = async (emailTo, subject, text) => {
+const sendEmail = (emailTo, subject, text) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {

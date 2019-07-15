@@ -10,7 +10,7 @@ const Project1 = () => (
         image={image} 
         title="Project Geo" 
         items={[
-            `This is verison 1.0.0 of my website. As my tastes change so will the layout. Currently the site is 
+            `This is verison 1.0.0 of my personal website. As my tastes change so will the layout. Currently the site is 
                 painted in black, white, and green. In the future this may change.`,
             `Simplicity was chosen over complexity because simplicity leaves more room for growth.`,
         ]}    
@@ -42,7 +42,8 @@ const Project1 = () => (
                 `Improve UI/UX`,
                 `Consider using a different set of colors`,
                 `Add accessibility features`,
-                `Look into SEO`
+                `Look into SEO`,
+                `Add testing`
             ]} 
         />
     </Project>
