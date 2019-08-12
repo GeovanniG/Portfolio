@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <Frame>
             <article className="about-page">
-                <p>Hello, my name is Geovanni Gonzalez, or Geo for short. I am a recent UCI graduate
+                <p>Hello, my name is Geo. I am a recent UCI math graduate
                 and am now looking to join a software company that values passionate developers.</p>
                 <p>My journey in programming began back in 2014 where I learned the basics of both HTML and CSS. 
                 Since then, I have had the luxury of testing a wide array of languages. From Java to Matlab and now

@@ -43,8 +43,19 @@ const sendEmail = (emailTo, subject, text) => {
     });
 }
 
+if (process.env.NODE_ENV === 'production') {
+    // Serve any static files
+    app.use(express.static(buildDirectoryPath));
+        
+    // Handle React routing, return all requests to React app
+    app.get('*', function(req, res) {
+        res.sendFile(indexDirectoryPath);
+    });
+}
+
 app.get('/*', (req, res) => {
     res.sendFile(indexDirectoryPath);
 });
+
 
 app.listen(port, () => console.log(`${port} is listening`));

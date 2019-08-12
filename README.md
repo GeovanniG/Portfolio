@@ -6,3 +6,8 @@ in languages such as Javascript, HTML, CSS, and MongoDB. My projects have also t
 This site was primarily built with React. Later it may get completely remade using a different framework.
 
 If you notice/have any issues while browsing, or feel as though the site needs a redesign, let me know. My portfolio will always remain a work in progress. 
+
+### Link
+
+The site can be found here: 
+https://gonzalez-portfolio.herokuapp.com/
