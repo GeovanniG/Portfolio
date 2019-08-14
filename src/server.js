@@ -3,6 +3,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
+const compression = require('compression');
+const helmet = require('helmet');
 
 const buildDirectoryPath = path.join(__dirname, '../build');
 const indexDirectoryPath = path.join(__dirname, '../build', 'index.html');
@@ -10,7 +12,8 @@ const port = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(buildDirectoryPath));
+app.use(compression());
+app.use(helmet());
 
 app.post('/api/email', async (req, res) => {
     const emailTo = req.body.emailTo;
@@ -45,17 +48,25 @@ const sendEmail = (emailTo, subject, text) => {
 
 if (process.env.NODE_ENV === 'production') {
     // Serve any static files
+    app.use(express.static(buildDirectoryPath, {
+        setHeaders: (res, path) => {
+            const staticDirectoryPath = path.join(__dirname, '../build', 'static');
+            
+            if (path.includes(indexDirectoryPath)) {
+                res.setHeader('Cache-Control', 'no-cache');
+            } else if (path.includes(staticDirectoryPath)) {
+                res.setHeader('Cache-control', 'max-age=31536000');
+            }
+        }
+    }));
+} else {
     app.use(express.static(buildDirectoryPath));
-        
-    // Handle React routing, return all requests to React app
-    app.get('*', function(req, res) {
-        res.sendFile(indexDirectoryPath);
-    });
 }
 
+// Handle React routing, return all requests to React app
 app.get('/*', (req, res) => {
     res.sendFile(indexDirectoryPath);
 });
 
-
-app.listen(port, () => console.log(`${port} is listening`));
+// app.listen(port, () => console.log(`${port} is listening`));
+app.listen(port);
