@@ -32,7 +32,9 @@ const Project1 = () => (
                 `UI/UX design is harder than expected`,
                 `Use components to make site scalable`,
                 `Redux is not always necessary`,
-                `React-routers make building SPA a breeze`
+                `React-routers make building SPA a breeze`,
+                `Code splitting can make initial loads faster`,
+                `For production it's recommended to gzip files and add cache-control`
             ]} 
         />
 

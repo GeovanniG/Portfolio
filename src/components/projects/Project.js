@@ -5,7 +5,9 @@ const Project = ({ image, title, items, children, liveProject, sourceCode } = {}
     return (
         <section className="project">
             <div className="project__img-box">
-                <img src={image} alt="project" className="project__img "/>
+                <a href={liveProject}>
+                    <img src={image} alt="project" className="project__img "/>
+                </a>
             </div>
             <div className="project__text-box">
                 <div  className="project__text-title">

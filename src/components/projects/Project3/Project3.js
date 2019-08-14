@@ -3,7 +3,7 @@ import Project from '../Project';
 import ProjectList from '../ProjectList';
 import image from './project-3.png';
 
-const Project1 = () => (
+const Project3 = () => (
     <Project
         liveProject="https://geovannig.github.io/date-space/"
         sourceCode="https://github.com/GeovanniG/date-space"  
@@ -44,4 +44,4 @@ const Project1 = () => (
     </Project>
 )
 
-export default Project1;
+export default Project3;
