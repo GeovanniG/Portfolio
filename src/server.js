@@ -7,6 +7,7 @@ const compression = require('compression');
 const helmet = require('helmet');
 
 const buildDirectoryPath = path.join(__dirname, '../build');
+const staticDirectoryPath = path.join(__dirname, '../build', 'static');
 const indexDirectoryPath = path.join(__dirname, '../build', 'index.html');
 const port = process.env.PORT || 3001;
 
@@ -50,8 +51,6 @@ if (process.env.NODE_ENV === 'production') {
     // Serve any static files
     app.use(express.static(buildDirectoryPath, {
         setHeaders: (res, path) => {
-            const staticDirectoryPath = path.join(__dirname, '../build', 'static');
-            
             if (path.includes(indexDirectoryPath)) {
                 res.setHeader('Cache-Control', 'no-cache');
             } else if (path.includes(staticDirectoryPath)) {
