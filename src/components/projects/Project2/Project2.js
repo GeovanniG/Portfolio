@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 import ProjectList from '../ProjectList';
-import image from './project-2.png';
+import image from './project-2c.png';
 
 const Project2 = () => (
     <Project 
