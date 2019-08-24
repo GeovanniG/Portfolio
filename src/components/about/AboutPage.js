@@ -5,6 +5,7 @@ const AboutPage = () => {
     return (
         <Frame>
             <article className="about-page">
+                <h1 className="about-me__title">About Me</h1>
                 <p>Hello, my name is Geo. I am a recent UCI math graduate
                 and am now looking to join a software company that values passionate developers.</p>
                 <p>My journey in programming began back in 2014 where I learned the basics of both HTML and CSS. 

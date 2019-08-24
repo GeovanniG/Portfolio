@@ -6,9 +6,10 @@ const Frame = (props) => {
     return (
         <div className="frame">
             <Nav />
-            <div className="frame__box">
+            {/* <div className="frame__box"> */}
                 {props.children}
-            </div>
+            {/* </div> */}
+            {/* <Footer className="frame__footer" /> */}
             <Footer />
         </div>
     )

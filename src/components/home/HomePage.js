@@ -7,8 +7,8 @@ import Social from '../Social';
 const HomePage = () => {
     return (
         <div className="homepage">
-            <Social />
             <Nav />
+            <Social />
             <Header />
             <Footer />
         </div>

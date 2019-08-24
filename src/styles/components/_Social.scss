@@ -3,7 +3,7 @@
     font-size: $xl-size;
     position: absolute;
     right: 0;
-    top: $xl-size;
+    top: 52px;
 }
 
 .social__icon {
@@ -15,6 +15,6 @@
 @media (min-width: $l-breakpoint) {
     .social__icons {
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }

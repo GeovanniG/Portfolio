@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ className }) => {
     return (
         <div>
-            <footer className="footer">
+            <footer className={`footer ${className}`}>
                 <p>Created by Geo</p>
             </footer>
         </div>
