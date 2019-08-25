@@ -8,7 +8,6 @@ const AboutPage = React.lazy(() => import('../components/about/AboutPage'));
 const ContactPage = React.lazy(() => import('../components/contact/ContactPage'));
 // const PrototypePage = React.lazy(() => import('../components/proto/Prototype'));
 
-
 const WebsiteRouter = () => {
     return (
         <BrowserRouter basename="/">
