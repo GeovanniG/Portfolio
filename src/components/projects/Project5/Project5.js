@@ -8,7 +8,7 @@ const Project3 = () => (
         liveProject="https://gonzalez-movie.herokuapp.com/"
         sourceCode="https://github.com/GeovanniG/MovieApp"  
         image={image} 
-        title="Movie/Series Diplayer with Postgres for Storing Likes/Dislikes" 
+        title="Movie/Series Displayer with Postgres for Storing Likes/Dislikes" 
         items={[
             `If you are unsure about what to watch next, head over to the app and see what is popular.`,
             `This app will show you what movies are currently on air as well as popular/top rated series. 

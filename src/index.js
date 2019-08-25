@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import WebsiteRouter from './router/WebsiteRouter';
 
-import 'normalize.css/normalize.css';
+import '@csstools/normalize.css';
 import './styles/styles.scss';
 
 ReactDOM.render(<WebsiteRouter />, document.getElementById('root'));
