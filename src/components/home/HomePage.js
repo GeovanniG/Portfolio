@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import Section from './Section';
 import Nav from '../Nav';
 import Social from '../Social';
 
@@ -10,7 +10,7 @@ const HomePage = () => {
             <Nav />
             <Social />
             <Header />
-            <Footer />
+            <Section />
         </div>
     )
 }

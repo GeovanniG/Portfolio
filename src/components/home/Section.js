@@ -2,9 +2,9 @@ import React from 'react';
 import { faCode, faFile, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import Card from './Card';
 
-const Footer = () => {
+const Section = () => {
     return (        
-        <footer className="home-footer">
+        <section className="home-section">
             <Card 
                 title="Projects"
                 icon={faCode}
@@ -33,8 +33,8 @@ const Footer = () => {
                         `Proposals such as offers and improvements will be greatly appreciated, but so will simple comments.`
                         ]}
             />
-        </footer>
+        </section>
     )
 }
 
-export default Footer;
+export default Section;

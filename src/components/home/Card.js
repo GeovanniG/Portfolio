@@ -4,17 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = ({ title, subtitle, text, icon }) => {
     return (
-        <div className="home-footer__card">
-            <Link to="/projects" className="home-footer__link">
-                <p className="home-footer__link-text">
-                    {icon && <FontAwesomeIcon icon={icon} className="home-footer__link-icon" />}
+        <div className="home-section__card">
+            <Link to="/projects" className="home-section__link">
+                <p className="home-section__link-text">
+                    {icon && <FontAwesomeIcon icon={icon} className="home-section__link-icon" />}
                     {title}
                 </p>
             </Link>
-            <div className="home-footer__text">
-                <h2 className="home-footer__text-title">{subtitle}</h2>
+            <div className="home-section__text">
+                <h2 className="home-section__text-title">{subtitle}</h2>
                 {text && 
-                text.map((paragraph, i) => <p key={i} className="home-footer__text-body">{paragraph}</p>)}
+                text.map((paragraph, i) => <p key={i} className="home-section__text-body">{paragraph}</p>)}
             </div>
         </div>
     )
