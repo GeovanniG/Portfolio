@@ -1,9 +1,9 @@
-.home-footer {
+.home-section {
     background: $black-primary;
 }
 
 @media (min-width: $s-breakpoint) {
-    .home-footer {
+    .home-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
