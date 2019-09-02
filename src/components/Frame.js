@@ -2,13 +2,13 @@ import React from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const Frame = (props) => {
+const Frame = ({ children, className }) => {
     return (
         <div className="frame">
             <Nav />
-            {/* <div className="frame__box"> */}
-                {props.children}
-            {/* </div> */}
+            <div className={`${className}`}>
+                {children}
+            </div>
             {/* <Footer className="frame__footer" /> */}
             <Footer />
         </div>

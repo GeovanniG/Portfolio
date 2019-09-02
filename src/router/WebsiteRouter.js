@@ -6,6 +6,7 @@ const ProjectsPage = React.lazy(() => import('../components/projects/ProjectsPag
 const ResumePage = React.lazy(() => import('../components/resume/ResumePage'));
 const AboutPage = React.lazy(() => import('../components/about/AboutPage'));
 const ContactPage = React.lazy(() => import('../components/contact/ContactPage'));
+const GoalsPage = React.lazy(() => import('../components/goals/GoalsPage'));
 // const PrototypePage = React.lazy(() => import('../components/proto/Prototype'));
 
 const WebsiteRouter = () => {
@@ -18,6 +19,7 @@ const WebsiteRouter = () => {
                     <Route path="/resume" component={ResumePage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/contact" component={ContactPage} />
+                    <Route path="/goals" component={GoalsPage} />
                     {/* <Route path="/proto" component={PrototypePage} /> */}
                     <Route path="/*">
                         <Redirect to="/" />

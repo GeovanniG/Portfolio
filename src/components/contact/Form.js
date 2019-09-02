@@ -7,17 +7,26 @@ const Form = () => {
     const [email, setEmail] = useState('');
     const [msg, setMsg] = useState('');
     const [error, setError] = useState('');
+    const [clear, setClear] = useState(false);
+
 
     const onSubmit = async (e) => {
         e.preventDefault();
+        
+        if (clear) {
+            clearInput();
+            setError('');
+            return setClear(false);
+        }
+
         if (!isValidEmail()) {
             setError('Invalid email address');
         } else if (!isValidMsg()) {
             setError('Invalid message');
         } else {
             const fullname = fname + ' ' + lname;
-            const suc = await sendEmail(email, `From Portfolio, sent by ${fullname} from ${company}`, msg);
-            if (suc) clearInput();
+            const success = await sendEmail(email, `From Portfolio, sent by ${fullname} from ${company}`, msg);
+            if (success) clearInput();
         }
     }
 
@@ -65,10 +74,11 @@ const Form = () => {
 
     return (
         <>
-            <form onSubmit={onSubmit} className="contact-form">
+            <form className="contact-form" onSubmit={onSubmit}>
                 <p className="required-text">
                     <span className="required-text--red">*</span>required
                 </p>
+                {/* Empty tag needed for grid */}
                 <span></span> 
 
                 <label htmlFor="fname" className="form__title">First Name: </label>
@@ -100,9 +110,10 @@ const Form = () => {
                     onChange={(e) => setMsg(e.target.value)}
                 ></textarea>
 
-                <button className="contact-form__btn">Clear</button>
+                <button className="contact-form__btn" onClick={() => setClear(true)}>Clear</button>
                 <button className="contact-form__btn">Send</button>
 
+                {/* Empty tag needed for grid */}
                 <span></span>
                 {error && <p className="invalid-text">{error}</p>}
             </form>

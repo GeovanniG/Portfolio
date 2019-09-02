@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     // margin-bottom: $xs-size;
     position: sticky;
+    text-align: center;
     top: 0;
 }
 
@@ -22,4 +23,14 @@
 .nav-link--active {
     color: $green-primary;
     border-bottom: 2px solid $green-primary;
+}
+
+.nav--hide {
+    display: none;
+}
+
+@media (min-width: $s-breakpoint) {
+    .nav--hide {
+        display: inline;
+    }
 }
