@@ -10,6 +10,9 @@ const HomePage = () => {
             <Nav />
             <Social />
             <Header />
+            <div className="home-btn-group">
+                <a href="https://geovannig.github.io/Portfolio-v2/" className="home-btn--link"><button className="home-btn">In Progress Project</button></a>
+            </div>
             <Section />
         </div>
     )
