@@ -14,12 +14,12 @@ const WebsiteRouter = () => {
         <BrowserRouter basename="/">
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
-                    <Route exact path="/" component={HomePage} />
                     <Route path="/projects" component={ProjectsPage} />
                     <Route path="/resume" component={ResumePage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/goals" component={GoalsPage} />
+                    <Route path="/" component={HomePage} exact />
                     {/* <Route path="/proto" component={PrototypePage} /> */}
                     <Route path="/*">
                         <Redirect to="/" />
