@@ -2,34 +2,29 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
     justify-content: center;
-    margin: $m-size;
+    margin: $xl-size auto;
 }
 
 .about-me__title {
+    font-size: $xl-size;
     margin: 0;
 }
 
 .about-page p {
-    margin: $xs-size;
-    text-indent: $m-size;
+    margin: $m-size;
+    text-indent: $xl-size;
 }
 
 @media (min-width: $xs-breakpoint) {
     .about-page {
-        margin: $m-size auto;
         width: 70%;
     }
 }
 
 @media (min-width: $l-breakpoint) {
     .about-page {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .about-page {
-        width: 40%;
+        width: 60%;
     }
 }

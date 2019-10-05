@@ -3,8 +3,9 @@
     grid-column-gap: $m-size;
     grid-row-gap: $m-size;
     grid-template-columns: 1fr 2fr;
-    margin: $s-size;
+    margin: 2rem $s-size 4rem $s-size;
     justify-items: center;
+    font-size: 1.8rem;
 }
 
 .contact-form__btn {
@@ -26,7 +27,7 @@
 }
 
 .required-text {
-    font-size: $s-size;
+    // font-size: $s-size;
     justify-self: start;
 }
 
@@ -47,7 +48,10 @@
 
 @media (min-width: $s-breakpoint) {
     .contact-form {
-        margin: $l-size auto;    
+        // margin: $l-size auto;    
+        // margin: 0 auto $l-size auto;    
+        margin: $l-size auto $xl-size auto;    
+        // margin: $xl-size auto;    
         width: 80%;
     }
 }

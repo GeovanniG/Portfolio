@@ -13,7 +13,7 @@ body {
     font-family: 'Josefin Sans', Helvetica, sans-serif;
     font-size: $m-size;
     letter-spacing: 0.0625rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: auto;
     max-width: $xl-breakpoint;
     position: relative;
@@ -29,7 +29,9 @@ button, input[type=submit], .social__icon {
     border-radius: $xl-size;
     color: $white-primary;
     cursor: pointer;
-    padding: 0.6rem $xs-size;
+    // padding: 0.6rem $xs-size;
+    font-size: 1.6rem;
+    padding: 2rem;
     transition: scale .2s ease-in-out;
 }
 

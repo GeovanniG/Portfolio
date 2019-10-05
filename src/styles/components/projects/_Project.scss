@@ -1,11 +1,17 @@
 .project {
     border-bottom: 1px solid $black-primary;
-    margin: $l-size $m-size $xl-size $m-size;
+    // margin: $l-size $m-size $xl-size $m-size;
+    margin: 0 $m-size $xl-size $m-size;
 }
 
 .project__img-box {
     width: 100%;
+    margin-top: 4rem;
     text-align: center;
+}
+
+.project__img-box a {
+    display: inline-block;
 }
 
 .project__img {
@@ -14,7 +20,12 @@
 }
 
 .project__text-title {
+    font-size: 2.2rem;
     text-align: center;
+}
+
+.project__text-box {
+    margin: 3rem 0;
 }
 
 .project__text {
@@ -41,7 +52,8 @@
 
 @media (min-width: $xs-breakpoint) {
     .project {
-        margin: $m-size auto;
+        // margin: $m-size auto;
+        margin: 0 auto;
         width: 80%;
     }
 }
@@ -54,6 +66,7 @@
 
 @media (min-width: $m-breakpoint) {
     .project {
+        // align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: minmax(25rem, auto);

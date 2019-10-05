@@ -9,6 +9,7 @@ import Project5 from './Project5/Project5';
 const ProjectsPage = () => {
     return (
         <Frame>
+            <h1 className="projects-title">Projects</h1>
             <Project5 />
             <Project1 />
             <Project4 />

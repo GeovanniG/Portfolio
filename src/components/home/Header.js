@@ -8,11 +8,13 @@ const Header = () => {
             </h1>
             <p className="home-header__text"> A software developer</p>
             <div className="home-header__text--fade-in">
-                <p className="home-header__text--fade-in-1s">with persistence,</p>
-                <p className="home-header__text--fade-in-2s">curiosity,</p>
-                <p className="home-header__text--fade-in-3s">humility,</p>
-                <p className="home-header__text--fade-in-4s">and</p>
-                <p className="home-header__text--fade-in-5s">ambition.</p>
+                <p>that specializes in</p>
+                <p className="home-header__text--fade-in-50ms"><span className="home-header__text--color">Front-end</span> development,</p>
+                <p className="home-header__text--fade-in-100ms">
+                    <span className="home-header__text--color">React</span>,
+                    <span className="home-header__text--fade-in-150ms"> and a bit of</span>
+                </p>
+                <p className="home-header__text--fade-in-200ms"><span className="home-header__text--color">Back-end</span> development.</p>
             </div>
         </header>
     )

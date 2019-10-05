@@ -1,17 +1,16 @@
 .home-header {
     align-items: center;
-    // background: $black-primary;
-    // border-radius: $xs-size;
     color: $white-primary;
     display: flex;
     flex-direction: column;
-    height: 60vh;
     justify-content: center;
     width: 100&;
 }
 
 .home-header__title {
-    font-size: $l-size;
+    text-align: center;
+    font-size: $xl-size;
+    margin-top: 2.5rem;
 }
 
 .home-header__title--inverse {
@@ -26,29 +25,41 @@
 }
 
 .home-header__text--fade-in {
-    // display: none; // Remove when done
-    font-size: $m-size;
     text-align: center;
 }
 
-.home-header__text--fade-in-1s {
+.home-header__text--color {
+    color: #EE82EE;
+    font-weight: 600;
+}
+
+.home-header__text--fade-in p {
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
+.home-header__text {
+    font-size: 1.8rem;
+}
+
+.home-header__text--fade-in-50ms {
+    @include fade(.5s)
+}
+
+.home-header__text--fade-in-100ms {
     @include fade(1s)
 }
 
-.home-header__text--fade-in-2s {
+.home-header__text--fade-in-150ms {
+    @include fade(1.5s)
+}
+
+.home-header__text--fade-in-200ms {
     @include fade(2s)
 }
 
-.home-header__text--fade-in-3s {
-    @include fade(3s)
-}
-
-.home-header__text--fade-in-4s {
-    @include fade(4s)
-}
-
-.home-header__text--fade-in-5s {
-    @include fade(5s)
+.home-header__text--fade-in-250ms {
+    @include fade(2.5s)
 }
 
 @keyframes fade-in {
@@ -61,13 +72,9 @@
 }
 
 @media (min-width: $m-breakpoint) {
-    .home-header__title {
-        font-size: $xl-size;
-    }
-
-    .home-header__text--fade-in {
+    // .home-header__text--fade-in {
         // display: none; // Remove when done
-        font-size: $m-size;
-        text-align: center;
-    }
+        // font-size: $m-size;
+        // text-align: center;
+    // }
 }

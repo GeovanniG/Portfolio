@@ -1,14 +1,22 @@
 .homepage {
     background: $black-primary;
-    // height: 100%;
-    height: 100vh;
 }
 
 .home-btn-group {
-    display: block;
-    text-align: center;
-    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 5rem auto;
     padding: 1rem;
+}
+
+.home-btn-group__left {
+    text-align: center;
+}
+
+.home-btn {
+    display: inline;
 }
 
 .home-btn--link {
@@ -16,8 +24,39 @@
     margin: 1.5rem;
 }
 
-@media (min-width: $m-breakpoint) {
+.home-btn__invert {
+    color: $black-primary;
+    background: $white-primary;
+}
+
+.home-btn__invert:hover {
+    color: $green-primary;
+    background: $black-primary;
+}
+
+.home-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(256,256,256,0.2), 0 6px 20px 0 rgba(256,256,256,0.19);
+}
+
+.home-btn-text {
+    color: $white-primary;
+    // padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+@media (min-width: $s-breakpoint) {
     .home-btn-group {
-        margin: 5rem auto;
+        flex-direction: row;
+    }
+
+    .home-btn-group__left {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: $l-breakpoint) {
+    .home-btn-text {
+        padding-top: 2rem;
     }
 }

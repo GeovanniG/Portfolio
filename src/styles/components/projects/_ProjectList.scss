@@ -1,9 +1,13 @@
 .project__list {
-    margin: $s-size auto;
+    margin: 2rem auto;
 }
 
 .project__list-ul {
     padding-left: $s-size;
+}
+
+.project__list-title {
+    font-size: 2.2rem;
 }
 
 .project__list-item-hide {
