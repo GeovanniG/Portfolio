@@ -29,17 +29,21 @@
 }
 
 .home-header__text--color {
+    display: inline-block;
     color: #EE82EE;
     font-weight: 600;
 }
 
-.home-header__text--fade-in p {
+.home-header__text--fade-in {
     font-size: 1.8rem;
+}
+
+.home-header__text--fade-in p {
     margin: 1rem;
 }
 
-.home-header__text {
-    font-size: 1.8rem;
+.home-header__text--fade-in-25ms {
+    @include fade(.25s)
 }
 
 .home-header__text--fade-in-50ms {

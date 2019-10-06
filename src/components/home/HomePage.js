@@ -23,7 +23,7 @@ const HomePage = () => {
                 <p className="home-btn-text">
                     First Attempt at an Open Source Project:
                     {/* <a href="/" className="home-btn--link"><button className="home-btn">GRE Study App</button></a> */}
-                    <a href="/" className="home-btn--link"><button className="home-btn">Coming Soon</button></a>
+                    <a href="https://github.com/GeovanniG/gre-review" className="home-btn--link"><button className="home-btn">GRE Study App</button></a>
                 </p>
                 {/* <Section /> */}
             </div>

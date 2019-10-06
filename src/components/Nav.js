@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 const Nav = () => {
     const [iconBtn, setIconBtn] = useState(false);
@@ -13,7 +14,7 @@ const Nav = () => {
                         className="nav-icon nav-link"
                         onClick={() => setIconBtn(!iconBtn)}
                     >
-                        X
+                        <FaBars />
                     </span>
                     <div className={`nav-dropdown ${dropdownClass}`} >
                         <NavLink to="/projects" className="nav-link" activeClassName="nav-link--active">Projects</NavLink>
