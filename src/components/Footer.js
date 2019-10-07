@@ -19,7 +19,7 @@ const Footer = ({ className }) => {
                     
                         <section className="footer--email">
                             <h2 className="footer--social-title">Email</h2>
-                            <a href="mailto:geog714@gmail.com?Subject=Hello" target="_top" aria-label="Email" className="footer--link">geog714@gmail.com</a>
+                            <a href="mailto:geog714@gmail.com?Subject=Hello" target="_top" aria-label="Email" className="footer--link">admin@geovannigonzalez.com</a>
                         </section>
 
                         <section className="footer--location">
@@ -35,7 +35,7 @@ const Footer = ({ className }) => {
                 </section>
 
                 <section className="footer--about">
-                    <h2 className="footer--site-title">CodingGeo</h2>
+                    <h2 className="footer--site-title">GeoG</h2>
                     <p>A portfolio built with plain-old react, html and css.</p>
                 </section>
             </footer>

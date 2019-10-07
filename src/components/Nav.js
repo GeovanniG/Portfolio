@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
             <nav className="nav" aria-label="Main Navigation">
-                <NavLink to="/" exact className="nav-link" activeClassName="nav-link--active">CodingGeo</NavLink>
+                <NavLink to="/" exact className="nav-link" activeClassName="nav-link--active">GeoG</NavLink>
                 <div className="nav-right">
                     <span 
                         className="nav-icon nav-link"
