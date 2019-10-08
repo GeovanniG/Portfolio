@@ -19,7 +19,7 @@ const Footer = ({ className }) => {
                     
                         <section className="footer--email">
                             <h2 className="footer--social-title">Email</h2>
-                            <a href="mailto:geog714@gmail.com?Subject=Hello" target="_top" aria-label="Email" className="footer--link">admin@geovannigonzalez.com</a>
+                            <a href="mailto:admin@geovannigonzalez.com?Subject=Hello" target="_top" aria-label="Email" className="footer--link">admin@geovannigonzalez.com</a>
                         </section>
 
                         <section className="footer--location">

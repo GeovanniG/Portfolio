@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-button, input[type=submit], .social__icon {
+button, .btn, input[type=submit], .social__icon {
     background: $black-primary;
     border: 1px solid $white-primary;
     border-radius: $xl-size;
@@ -35,7 +35,7 @@ button, input[type=submit], .social__icon {
     transition: scale .2s ease-in-out;
 }
 
-button:hover, .social__icon:hover {
+button:hover, .btn:hover, .social__icon:hover {
     border-color: $green-primary;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     color: $green-primary;

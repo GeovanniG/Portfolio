@@ -15,15 +15,15 @@ const Project = ({ image, title, items, children, liveProject, sourceCode } = {}
                 </div>
                 {items.map((item, i) => <p key={i} className="project__text">{item}</p>)}
                 <div className="project__text-button-box">
-                    <a href={liveProject} className="project__text-link">
-                        <button className="project__text-button">
+                    <a href={liveProject} className="project__text-link btn">
+                        {/* <button className="project__text-button"> */}
                             Live Project
-                        </button>
+                        {/* </button> */}
                     </a>
-                    <a href={sourceCode} className="project__text-link">
-                        <button className="project__text-button">
+                    <a href={sourceCode} className="project__text-link btn">
+                        {/* <button className="project__text-button"> */}
                             Source Code
-                        </button>
+                        {/* </button> */}
                     </a>
                 </div>
             </div>

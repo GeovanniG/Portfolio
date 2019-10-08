@@ -35,11 +35,14 @@
 
 .project__text-button-box {
     text-align: center;
-    margin: $m-size 0;
+    padding: $m-size 0;
+    height: auto;
 }
 
-.project__text-button {
-    margin: 0 $s-size;
+.project__text-link {
+    display: inline-block;
+    padding: 1.5rem;
+    margin: 1rem;
 }
 
 .project__text-link:visited {
@@ -78,6 +81,6 @@
 
 @media (min-width: $l-breakpoint) {
     .project {
-        width: 80%;
+        width: 85%;
     }
 }
